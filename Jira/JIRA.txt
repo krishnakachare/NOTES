@@ -1,0 +1,41 @@
+JIRA
+
+- project management, issue tracking, and bug tracking tool
+- developed by an Australian company named Atlassian
+- organize, monitor, release, and implement new features in the software and for prioritizing the bugs.
+- scrumb, kanban,mixed methodlology,agile scale
+
+Agile methodology =>softwaee developemnt technique
+
+SDLC
+1. Requirement collection
+2. feasibility study
+3. design
+4. coding
+5. testing
+6. installtion
+7. maintenace
+
+Different model
+1. Water fall model
+2. Spiral model
+3. proto type model
+4. V-V model
+5. Agile model
+
+
+Agile model => Iterative development => all ppl work together
+Scrumb and kanban board
+
+- Scrumb => fremwork followed by scrumb team to develop multiple sprint
+
+- Sprint => time duration taken by scrumb team to develop user story
+
+
+
+
+
+
+
+
+
