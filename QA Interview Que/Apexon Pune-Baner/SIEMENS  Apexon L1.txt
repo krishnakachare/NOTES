@@ -1,0 +1,17 @@
+Your team needs to ensure that the web application works seamlessly across multiple browsers such as Chrome, Firefox, and Safari. Describe how you would approach cross-browser testing using Selenium/Webdriver.
+
+You need to test the functionality of a dropdown menu on a web page. How would you simulate user interactions using Selenium/Webdriver to ensure the dropdown behaves as expected?
+
+How would you test the navigation flows of a web application using Selenium/Webdriver? What test scenarios would you include to verify seamless navigation between different pages?
+
+You encounter an alert popup while executing a test scenario using Selenium/Webdriver. How would you handle this alert programmatically in your test script?
+
+Write a program to reverse a string without using any in-built method of c#.
+
+Write a code snippet to locate and interact with an input field using different locators (id, name, and xpath).
+
+Which built-in method removes the last element from an array and returns that element?
+
+call, bind, apply and how they will affect arrow function and normal function
+
+Explain IIF

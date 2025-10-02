@@ -1,0 +1,76 @@
+Execution Instructions - Review First
+Manual Test Execution
+To manually run your tests against the service, you can execute the following command:
+
+$ npm run devtest
+Automated Test Evaluation
+To execute an automated evaluation of your tests, you simply need to press the blue "Run" button in the lower right corner of the IDE.
+
+While working on your solution, we suggest following the "Manual Test Execution" process until you are ready to validate your solution.
+
+Ask
+The Library API functionality has been implemented to allow users to automate the retrieval, update, and reservation of books within the library system.
+
+You are to implement automated tests of the API functionality in the file base.spec.js.
+
+The API is defined by the following high-level User Stories, is implemented as a microservice, and is defined by the endpoint definitions (as described in the corresponding following sections). Additionally, you will find usage examples of each endpoint.
+
+The goal of these tests is to ensure that the user stories are correctly implemented via the documented API endpoints. Towards this goal, you should focus on ensuring that the endpoints both work correctly as expected when provided with correct data and that they return expected errors otherwise.
+
+User Stories
+As a User, I want to be able to retrieve a list of all books via the REST API, so that I can see book details and their availability.
+
+As a User, I want to be able to retrieve a single book with a given book ID via the REST API, so I see the book details.
+
+As a User, I want to retrieve the list of books reserved by a given patron ID via the REST API.
+
+As a User, I want to add a new book to the library via the REST API, so that it will appear in the library list.
+
+As a User, I want to reserve a specific book for the given patron via the REST API.
+
+As a User, I want to cancel the reservation of a specific book via the REST API, so that it is available to others.
+
+Microservice and Data
+The API is implemented as part of a microservice that operates at the URL: http://localhost:8080/library-api.
+
+Copies of the initial data used by the service are found in the service/library/data folder. The user data can be found in books.json and the initial set of books can be found in patrons.json. This data is loaded upon startup and initialization of the service.
+
+HTTP Headers
+When making calls to any service endpoint, you must include the following headers:
+
+API-Key which is the API key for this API, and is currently set to a value of "c0e3f970-a7e6-414c-8be0-34afb4a4a386"
+iteration, the evaluation iteration. This value is automatically set by the system in the iteration variable, be sure to include this header (see the GET example).
+Endpoint Definitions
+Endpoint	Method	Description
+reset/	POST	Resets the data to the initial state. This is for testing purposes only and will be disabled in production. You are not expected to test this functionality, it is only here for your convenience.
+books/	GET	Returns a 200 response along with a JSON object containing a list of all known books. The list of books will be sorted in ascending order according to title.
+books/:bookId	GET	Returns a 200 response along with a JSON representation of the book object with the given bookId, or a 404 and an error response message if no such book exists.
+reserve/:bookId/:patronId	GET	Reserves a specific book for a specific patron.
+Returns 400 response along with a message if there all the instances of that book are already reserved.
+Returns 400 response along with a message if the given patron has already reserved that book.
+patron_books/:patronId	GET	Retrieves a list of all books reserved by a specific patron.
+add_book/	POST	Adds a new book to the library. The request body must contain title and count fields for the book. Returns 400 response along with a message if the required fields are not present or if the count is less than 1.
+return_book/:bookId/:patronId	GET	Returns a specific book from a specific patron back to the library. Returns 400 response along with an error message if the book is not reserved by the given patron.
+
+Examples
+GET /library-api/books
+GET /library-api/books/:bookId
+GET /library-api/reserve_book/:bookId/:patronId
+GET /library-api/patron_books/:patronId
+POST /library-api/add_book
+GET /library-api/return_book/:bookId/:patronId
+[execution time limit] 50 seconds
+
+[memory limit] 1 GB
+
+Saved
+JavaScript / Mocha
+JavaScript v18.12.1
+
+Open or create a file to get started.
+Unit Tests
+Results
+Terminal
+Initializing the container...
+0/200
+Made 2 formatting edits between lines 64 and 67

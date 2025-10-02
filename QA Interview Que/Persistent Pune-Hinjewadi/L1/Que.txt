@@ -1,0 +1,24 @@
+Q. How are you ?
+Q. Introduce yourself
+Q. Challenges in your project
+Q. Test cases are failing in CICD run ? How you are debuging it and fixing it?
+
+Q. What you are prefaring in your project for pickuping UI elements: x-path or CSS selectos
+Q. Why css selectors ?
+Q. Have support for x-path in cypress, how ?
+Q. Where project dependancies are stored in cypress
+Q. Have support of video recording, screenshots in cypress
+Q. From where we can configure it
+Q. User of fixture folder
+Q. What is custome commands? How can make ? Where its stored ?
+
+Q. Open flifkart site. Make css selector for the printer img. Select it 1/1.
+   
+Q. In cypress how we can run the one test case multipal times for the different test data
+    Q. Create feature file, write dummy BDD code for above(1 TC running multiple time)
+        Here, Expected is the scenario outline(mechanism). Prepare for the BDD TC structure(feature file, step defination file)
+
+Q. write some git commands and explain it
+
+
+NOTE: Make ready code editor to write js & cypress code
